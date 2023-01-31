@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  padding: 10px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+#wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}
+#students {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 340px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+.item-student {
+  width: 300px;
+  margin-right: 20px;
+  margin-bottom: 14px;
+}
+.item-student p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.edit-btn,
+.remove-btn {
+  margin: 4px 0;
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 4px;
+  color: #fff;
+  font-weight: 600;
+}
+.remove-btn {
+  background-color: #e74c3c;
+}
+.edit-btn {
+  background-color: #3498db;
+}
+.edit-btn.active {
+  opacity: 0.4;
+}
+.edit-btn.active:hover {
+  opacity: 0.4;
+}
+.apply-btn {
+  background-color: #3498db;
+}
+
+.remove-btn:hover,
+.edit-btn:hover,
+.form-input-btn:hover {
+  opacity: 0.8;
+}
+.form-control {
+  height: 53px;
+}
+.form-input {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.form-input input {
+  width: 100%;
+  margin: 14px 0 0 0;
+  padding: 6px;
+  outline: none;
+  border: 1px solid #ccc;
+}
+.form-input-element.warning {
+  border-color: red;
+}
+.form-btn {
+  margin-top: 20px;
+}
+.form-input-btn {
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.add-btn {
+  background-color: #52be80;
+}
+.search-btn {
+  background-color: #f8d858;
+}
+.required-message {
+  font-weight: 400;
+  color: red;
+  font-size: 12px;
+  line-height: 0;
+}
